@@ -7,6 +7,17 @@
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
         <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        <script src="app.js" defer></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "vMD8eg9-bxRrSyrp0",
+            });
+        })();
+    </script>
+        
         <link rel="icon" type="image/png" href="assets/logo.png">
     </head>
     <body>
@@ -25,7 +36,7 @@
 
         <!---Home--------------------------------------------->
         <section id="home" class="home">
-            <div class="home-content">
+            <div class="home-content scroll-scale">
                 <h1>Hi! I'm Aswin R C</h1>
                 <div class="change-text">
                     <h3>
@@ -44,12 +55,12 @@
                     </div>
                 </div>
                 <div class="btn-box">
-                    <a href="#" class="btn">Let's Talk</a>
+                    <a href="#contact" class="btn">Let's Talk</a>
                 </div>
                 <div class="social-icons">
-                    <a href="#"><i class="bx bxl-instagram"></i></a>
-                    <a href="#"><i class="bx bxl-linkedin"></i></a>
-                    <a href="#"><i class="bx bxl-github"></i></a>
+                    <a href="https://www.instagram.com/r__aswin?igsh=a3loenk1eDh2aGto&utm_source=qr"><i class="bx bxl-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/aswin-r-c-962853172?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="bx bxl-linkedin"></i></a>
+                    <a href="https://github.com/rcaswin"><i class="bx bxl-github"></i></a>
                 </div>
             </div>
         </section>
@@ -222,7 +233,7 @@
                     <h3>ChatBot</h3>
                     <p>Developing an intelligent chatbot using IBM Watson Assistant to engage users through natural language processing, providing accurate and interactive responses to enhance user experience. The project aims to automate customer support and streamline interactions across various platforms.</p>
                     <div class="btn-box service-btn">
-                        <a href="#" class="btn">View</a>
+                        <a href="https://github.com/rcaswin/facial-expression-recognition-using-cnn" class="btn">View</a>
                     </div>
                 </div>
                 <div class="service-box">
@@ -230,7 +241,7 @@
                     <h3>Facial Expression Recognition System</h3>
                     <p>Building a facial expression recognition system using Convolutional Neural Networks (CNNs) to automatically detect and classify human emotions from facial images. This project aims to enhance applications in human-computer interaction, mental health, and security by accurately interpreting facial cues.</p>
                     <div class="btn-box service-btn">
-                        <a href="#" class="btn">View</a>
+                        <a href="https://github.com/rcaswin/Chatbot-Deployment-with-IBM-Cloud-Watson-Assistant" class="btn">View</a>
                     </div>
                 </div>
             </div>
@@ -299,12 +310,12 @@
             <div class="main-text">
                 <span>Ready to connect: drop me a message for any needs</span>
                 <h2>Contact Me</h2>
-                <form action="#">
-                    <input type="text" placeholder="Your Name">
-                    <input type="email" placeholder="Your Email">
-                    <input type="text" placeholder="Your Address">
-                    <input type="number" placeholder="Phone">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <form id="contact-form">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <input type="text" id="address" placeholder="Your Address">
+                    <input type="number" id="phone" placeholder="Phone">
+                    <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
                     <div class="btn-box formBtn">
                         <button class="btn" type="submit">Send Message</button>
                     </div>
@@ -316,6 +327,7 @@
             <p>Copyright &copy; 2024 by AswinRC || All Right Reserved.</p>
             <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
         </footer>
-        <script src="app.js"></script>
+        
+        
     </body>
 </html>

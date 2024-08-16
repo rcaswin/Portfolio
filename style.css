@@ -43,6 +43,8 @@ body{
     font-family: "Poppins", sans-serif;
     background: var(--bg-color);
     color: var(--text-color);
+    /* opacity: 0;
+    animation: slideIn 0.8s ease-out forwards; */
 }
 header{
     display: flex;
@@ -628,6 +630,15 @@ footer a i{
     color: var(--secon-bg-color);
 }
 
+/* .scroll-scale{
+    opacity: 0;
+    transform: scale(.9);
+    transition: all 2s;
+}
+.show-items{
+    opacity: 1;
+    transform: translateX(0);
+} */
 
 
 @media(max-width:991px){
@@ -700,7 +711,7 @@ footer a i{
         font-size: .6rem;
     }
     .skills .container {
-        padding: 1rem;
+        padding: .5rem;
         margin-top: 1rem;
     }
 
@@ -719,5 +730,15 @@ footer a i{
     .skills .container .bar .info .skill-logo {
         height: 50px;
         width: 60px;
+    }
+}
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
