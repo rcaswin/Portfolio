@@ -9,6 +9,9 @@
         <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
         <script src="contact.js" defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
         <script type="text/javascript">
         (function() {
             // https://dashboard.emailjs.com/admin/account
@@ -35,7 +38,7 @@
         </header>
 
         <!---Home--------------------------------------------->
-        <section id="home" class="home">
+        <section id="home" class="home fade-in">
             <div class="home-content scroll-scale">
                 <h1>Hi! I'm Aswin R C</h1>
                 <div class="change-text">
@@ -64,8 +67,8 @@
                 </div>
             </div>
         </section>
-        <!--About------------------------------------------------------------->
-        <section id="about" class="about">
+        <!-- About------------------------------------------------------------->
+        <section id="about" class="about fade-in">
             <h2 class="heading">About Me</h2>
             <div class="about-content">
                 <h3 class="sub-head">Passionate Developer</h3>
@@ -79,6 +82,7 @@
                 </div>
             </div> 
         </section>
+        
         <section class="education">
             <h2 class="heading">My Journey</h2>
             <div class="education-row">
@@ -234,62 +238,113 @@
 
         </section>
         <!--Projects------------------------------------------------------------->
-        <section id="projects" class="projects">
+        <section class="projects">
             <div class="main-text">
                 <span>Explore my work</span>
                 <h2>My Projects</h2>
+            <div class="card__container swiper">
+               <div class="card__content">
+                  <div class="swiper-wrapper">
+                     <article class="card__article swiper-slide">
+                        <div class="card__image">
+                           <img src="assets/img/avatar-1.png" alt="image" class="card__img">
+                           <div class="card__shadow"></div>
+                        </div>
+         
+                        <div class="card__data">
+                           <h3 class="card__name">Kell Dawx</h3>
+                           <p class="card__description">
+                              Passionate about development and design, 
+                              I carry out projects at the request of users.
+                           </p>
+         
+                           <a href="#" class="card__button">View More</a>
+                        </div>
+                     </article>
+         
+                     <article class="card__article swiper-slide">
+                        <div class="card__image">
+                           <img src="assets/img/avatar-2.png" alt="image" class="card__img">
+                           <div class="card__shadow"></div>
+                        </div>
+         
+                        <div class="card__data">
+                           <h3 class="card__name">Lotw Fox</h3>
+                           <p class="card__description">
+                              Passionate about development and design, 
+                              I carry out projects at the request of users.
+                           </p>
+         
+                           <a href="#" class="card__button">View More</a>
+                        </div>
+                     </article>
+         
+                     <article class="card__article swiper-slide">
+                        <div class="card__image">
+                           <img src="assets/img/avatar-3.png" alt="image" class="card__img">
+                           <div class="card__shadow"></div>
+                        </div>
+         
+                        <div class="card__data">
+                           <h3 class="card__name">Sara Mit</h3>
+                           <p class="card__description">
+                              Passionate about development and design, 
+                              I carry out projects at the request of users.
+                           </p>
+         
+                           <a href="#" class="card__button">View More</a>
+                        </div>
+                     </article>
+         
+                     <article class="card__article swiper-slide">
+                        <div class="card__image">
+                           <img src="assets/img/avatar-4.png" alt="image" class="card__img">
+                           <div class="card__shadow"></div>
+                        </div>
+         
+                        <div class="card__data">
+                           <h3 class="card__name">Jenny Wert</h3>
+                           <p class="card__description">
+                              Passionate about development and design, 
+                              I carry out projects at the request of users.
+                           </p>
+         
+                           <a href="#" class="card__button">View More</a>
+                        </div>
+                     </article>
+   
+                     <article class="card__article swiper-slide">
+                        <div class="card__image">
+                           <img src="assets/img/avatar-5.png" alt="image" class="card__img">
+                           <div class="card__shadow"></div>
+                        </div>
+         
+                        <div class="card__data">
+                           <h3 class="card__name">Lexa Kin</h3>
+                           <p class="card__description">
+                              Passionate about development and design, 
+                              I carry out projects at the request of users.
+                           </p>
+         
+                           <a href="#" class="card__button">View More</a>
+                        </div>
+                     </article>
+                  </div>
+               </div>
+   
+               <!-- Navigation buttons -->
+               <div class="swiper-button-next">
+                  <i class="ri-arrow-right-s-line"></i>
+               </div>
+               
+               <div class="swiper-button-prev">
+                  <i class="ri-arrow-left-s-line"></i>
+               </div>
+   
+               <!-- Pagination -->
+               <div class="swiper-pagination page"></div>
             </div>
-            <div class="section-services">
-                <div class="service-box">
-                    <i class="bx bx-code-alt service-icon"></i>
-                    <h3>ChatBot</h3>
-                    <p>Developing an intelligent chatbot using IBM Watson Assistant to engage users through natural language processing, providing accurate and interactive responses to enhance user experience. The project aims to automate customer support and streamline interactions across various platforms.</p>
-                    <div class="btn-box service-btn">
-                        <a href="https://github.com/rcaswin/facial-expression-recognition-using-cnn" class="btn">View</a>
-                    </div>
-                </div>
-                <div class="service-box">
-                    <i class="bx bx-code-alt service-icon"></i>
-                    <h3>Facial Expression Recognition System</h3>
-                    <p>Building a facial expression recognition system using Convolutional Neural Networks (CNNs) to automatically detect and classify human emotions from facial images. This project aims to enhance applications in human-computer interaction, mental health, and security by accurately interpreting facial cues.</p>
-                    <div class="btn-box service-btn">
-                        <a href="https://github.com/rcaswin/Chatbot-Deployment-with-IBM-Cloud-Watson-Assistant" class="btn">View</a>
-                    </div>
-                </div>
-                <div class="service-box">
-                    <i class="bx bx-code-alt service-icon"></i>
-                    <h3>Waste Report App</h3>
-                    <p>Developing a Waste Report Android app to enable users to report and track waste management issues efficiently. The app allows users to submit waste-related reports, view and manage submissions, and receive updates, aiming to improve community cleanliness and waste management processes.</p>
-                    <div class="btn-box service-btn">
-                        <a href="https://github.com/rcaswin/Waste_Report_App" class="btn">View</a>
-                    </div>
-                </div>
-                <div class="service-box">
-                    <i class="bx bx-code-alt service-icon"></i>
-                    <h3>Tourism App</h3>
-                    <p>Creating a Tourism app designed to enhance travel experiences by providing users with detailed information about attractions, accommodations, and local activities. The app includes features such as interactive maps, personalized recommendations, and real-time updates to help users plan and enjoy their trips effectively.</p>
-                    <div class="btn-box service-btn">
-                        <a href="https://github.com/rcaswin/Tourism_App" class="btn">View</a>
-                    </div>
-                </div>
-                <div class="service-box">
-                    <i class="bx bx-code-alt service-icon"></i>
-                    <h3>Quiz App</h3>
-                    <p>Creating a dynamic quiz app using Flutter that delivers an engaging and interactive user experience. The app features a variety of questions, tracks scores, and provides immediate feedback, making it an effective tool for learning and assessment.</p>
-                    <div class="btn-box service-btn">
-                        <a href="https://github.com/rcaswin/Quiz_App" class="btn">View</a>
-                    </div>
-                </div>
-                <div class="service-box">
-                    <i class="bx bx-code-alt service-icon"></i>
-                    <h3>User Profile Management System</h3>
-                    <p>This User Profile Management System is a Spring Boot application that allows users to sign up, log in, and manage their profiles with details such as name, email, and address. It includes role management to assign different permissions (e.g., USER, ADMIN) and uses MySQL as the database for storing user data. The application provides a secure and user-friendly interface for profile management and role-based access control.</p>
-                    <div class="btn-box service-btn">
-                        <a href="https://github.com/rcaswin/User-Profile-Management-System" class="btn">View</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+         </section>
         
         <!--Certification------------------------------------------------------------->
         <section id="certification" class="certification">
@@ -398,10 +453,12 @@
         </section>
         <!--Footer------------------------------------------------------------->
         <footer>
-            <p>Copyright &copy; 2024 by AswinRC || All Right Reserved.</p>
+            <p>Copyright &copy; 2025 by AswinRC || All Right Reserved.</p>
             <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
         </footer>
         
         <script src="app.js"></script>
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
